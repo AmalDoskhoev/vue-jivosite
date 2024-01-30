@@ -15,7 +15,7 @@ $ npm i vue-jivosite
 
 2. Use the plugin
 ```javascript
-import VueJivosite from '@bchteam/vue-jivosite'
+import VueJivosite from 'vue-jivosite'
 
 Vue.use(VueJivosite, { widgetId: 'fbas23URmI' })
 
@@ -36,7 +36,7 @@ Vue.use(VueJivosite, { widgetId: 'fbas23URmI' })
 #### Example of using all values
 
 ```javascript
-import VueJivosite from '@bchteam/vue-jivosite'
+import VueJivosite from 'vue-jivosite'
 
 Vue.use(VueJivosite, {
 	widgetId: 'fbas23URmI',

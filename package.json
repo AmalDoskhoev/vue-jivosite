@@ -8,6 +8,19 @@
     "name": "Amal Doskhoev",
     "url": "https://t.me/Amal_Doskhoev"
   },
+  "keywords": [
+    "vue",
+    "vue 2",
+    "vue 3",
+    "vue-jivosite",
+    "vue jivosite",
+    "jivosite",
+    "jivo",
+    "vue-jivochat",
+    "vue jivochat",
+    "jivochat"
+  ],
+  "license": "Apache-2.0",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
