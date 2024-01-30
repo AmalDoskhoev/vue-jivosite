@@ -1,7 +1,7 @@
 import {initJivo} from './helpers'
 
 export default {
-	install(Vue, {widgetId, scriptUrl = "", initialView = true, onInit = null, onFail = null})
+	install(Vue, {widgetId = "", scriptUrl = "", initialView = true, onInit = null, onFail = null})
 	{
 		if (!widgetId && !scriptUrl) throw new Error("[vue-jivosite] You need to specify either the widget id or the entire script url")
 
@@ -34,6 +34,12 @@ export default {
 				if (!jdiv) return;
 				jdiv.style.display = 'none';
 			};
+			Vue.config.globalProperties.$showJivo = function ()
+			{
+				const jdiv = document.querySelector('jdiv');
+				if (!jdiv) return;
+				jdiv.style.display = 'block';
+			};
 		} else
 		{
 			// Vue 2
@@ -42,6 +48,12 @@ export default {
 				const jdiv = document.querySelector('jdiv');
 				if (!jdiv) return;
 				jdiv.style.display = 'none';
+			};
+			Vue.prototype.$showJivo = function ()
+			{
+				const jdiv = document.querySelector('jdiv');
+				if (!jdiv) return;
+				jdiv.style.display = 'block';
 			};
 		}
 	}
